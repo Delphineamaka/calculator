@@ -1,0 +1,55 @@
+body{
+	margin: 0;
+ 
+}
+
+#Calculator{
+	font-size: 30px;
+	padding: 100px 50px 50px 50px;
+}
+
+.cal-screen{
+	box-sizing: border-box;
+	width: 50%;
+	background-color: black;
+	border-style: none;
+	color: white;
+	font-size: 30px;
+	height: 150px;
+	text-align: right;
+}
+.cal-btn{
+	box-sizing: border-box;
+	display: grid;
+	/* grid-gap: 10px solid black; */
+	grid-template-columns: repeat(4, 4fr);
+	grid-template-rows: repeat(5, 80px);
+	width: 50%;
+
+}
+
+.num,
+.All-clear,
+.percent,
+.resize,
+.operator,
+.delete,
+.decimal,
+.equal-sign{
+	font-size: 20px;
+	background-color: black;
+	border-style: none;
+	color: white;
+}
+
+.resize,
+.All-clear,
+.equal-sign{
+  color: #964B00;
+}
+
+.operator,
+.percent,
+.delete{
+	color: darkgrey;
+}
