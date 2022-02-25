@@ -1,55 +1,139 @@
+:root{
+--pink: #f6f6f6;
+ 
+
+}
+
+
+
 body{
 	margin: 0;
+	padding: 0;
+	background-image: conic-gradient( #870A30, #02020a,   #870A30);
+}
+
  
-}
-
 #Calculator{
-	font-size: 30px;
-	padding: 100px 50px 50px 50px;
-}
+	cursor: pointer;
+	display: grid;
+	margin: 100px 300px;
+	padding: 50px;
+	
 
+}
+ 
+	
 .cal-screen{
+  
 	box-sizing: border-box;
-	width: 50%;
-	background-color: black;
+	max-width: 500px;
+	background-color:#fafafa ;
 	border-style: none;
-	color: white;
-	font-size: 30px;
+	color: #02020a;
+	font-size: 80px;
 	height: 150px;
 	text-align: right;
+	
 }
 .cal-btn{
 	box-sizing: border-box;
-	display: grid;
-	/* grid-gap: 10px solid black; */
-	grid-template-columns: repeat(4, 4fr);
-	grid-template-rows: repeat(5, 80px);
-	width: 50%;
+	background-color: #870A30;
+ 	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat (5, 100px);
+	max-width: 500px;
+	padding: 20px;
+
+
 
 }
 
 .num,
 .All-clear,
 .percent,
-.resize,
 .operator,
 .delete,
 .decimal,
-.equal-sign{
-	font-size: 20px;
-	background-color: black;
+.equal{
+    
 	border-style: none;
-	color: white;
+	background-color: #02020a;
+	box-shadow: 2px 5px #02020a;
+	color: #c0c0c0;
+    border-radius: 100%;
+	font-size: 30px;
+	padding: 10px;
+	margin: 20px;
 }
+.equal{
+	background-color: #870A30;
+}
+ 
+.cal-btn :hover{
+	 opacity: 0.5;
 
-.resize,
-.All-clear,
-.equal-sign{
-  color: #964B00;
-}
+ }
+  
+ 
+ /*extra small phones  */
+  @media screen and (max-width:500px) {
+	 .cal-screen{
+     width: 200px;
+	  font-size: 30px;
+	 }
+	 .cal-btn{
+		 max-width: 200px;
+		 
+		
+	 }
+ }
+/* small screen like phones */
+  @media screen and (min-width:600px) {
+	 .cal-screen{
+     max-width: 350px;
+	 font-size: 40px;
 
-.operator,
-.percent,
-.delete{
-	color: darkgrey;
-}
+	 }
+	 .cal-btn{
+		max-width: 350px;
+		
+	 }
+	 
+ }
+/* meduim devices like tablet */
+   @media screen and (min-width:768px) {
+	 .cal-screen{
+     max-width: 400px;
+	  font-size: 50px;
+	 
+	
+	 }
+	 .cal-btn{
+		 max-width: 400px;
+		   
+	 }
+	 
+ }
+/* large device like laptop */
+   @media screen and (min-width:992px) {
+	 .cal-screen{
+     max-width: 500px;
+	  font-size: 60px;
+	 }
+	 .cal-btn{
+		 max-width: 500px;
+		  
+	 }
+	 
+ }
+   @media screen and (min-width:1200px) {
+	 .cal-screen{
+     max-width: 500px;
+	 font-size: 80px;
+	 }
+	 .cal-btn{
+		 max-width: 500px;
+	 }
+	 
+ }
