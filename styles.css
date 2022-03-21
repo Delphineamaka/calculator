@@ -34,15 +34,21 @@ body{
  	display: grid;
 	grid-gap: 10px;
 	grid-template-columns: repeat(4, 1fr);
+	grid-row-start: 4;
 	grid-template-rows: repeat (5, 100px);
 	max-width: 500px;
 	padding: 20px;
  
 }
 
+ .All-clear{
+	 grid-column-start: 1;
+	 grid-column-end: 5;
+	 margin: 10px;
+ 
+ }
 .num,
 .All-clear,
-.percent,
 .operator,
 .delete,
 .decimal,
@@ -63,6 +69,8 @@ body{
  
 .cal-btn :hover{
 	 opacity: 0.5;
+	 border-style: dotted;
+	 box-shadow: none;
 
  }
   
